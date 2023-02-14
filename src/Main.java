@@ -7,15 +7,6 @@ public class Main {
     public static void main(String[] args) {
         //Task 1
 
-        /*Напишите реализации функционального интерфейса
-        Predicate, которые проверяют, является ли число положительным. Если число положительное,
-        то предикат должен возвращать true, в противном случае — false.
-        Реализуйте Predicate в двух вариантах:
-
-        1. через анонимный класс
-        2. через лямбду        */
-
-
         Predicate<Integer> intPredicate = new Predicate<Integer>() {
             @Override
             public boolean test(Integer integer) {
@@ -30,14 +21,7 @@ public class Main {
         System.out.println(intLambdaPredicate.test(-18));
 
 
-
-
         //Task 2
-
-        /*Создайте функциональный интерфейс Consumer,
-        который принимает на вход имя человека и выводит в консоль приветствие в его адрес.
-
-        Реализуйте его в двух вариантах: через анонимный класс и через лямбду.*/
 
         Consumer<String> helloConsumer = new Consumer<String>() {
             @Override
@@ -52,12 +36,8 @@ public class Main {
 
         helloLambdaConsumer.accept("Sasha");
 
+
         //Task 3
-
-        /*Реализуйте функциональный интерфейс Function, который принимает на вход вещественное число типа
-         Double, а возвращает его округленный вариант типа Long.
-
-        Реализуйте его в двух вариантах: через анонимный класс и через лямбду.*/
 
         Function<Double, Long> numFunction = new Function<Double, Long>() {
             @Override
@@ -90,10 +70,6 @@ public class Main {
 
 
         //Task 4
-
-        /*Напишите Supplier, который возвращает случайное число из диапазона от 0 до 100.
-
-        Реализуйте его в двух вариантах: через анонимный класс и через лямбду.*/
 
         Supplier<Integer> intSupplier = new Supplier<Integer>() {
             @Override
